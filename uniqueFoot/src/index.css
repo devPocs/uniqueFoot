@@ -1,0 +1,18 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/*vanilla css*/
+
+/*header element*/
+*{box-sizing: border-box;
+padding: 0;
+margin: 0;}
+.material-icons {
+  color: #3d3e53;
+  font-size: 2.0rem;
+}
+.material-icons:hover {
+  color: #fe9227;
+  cursor: pointer;
+}
