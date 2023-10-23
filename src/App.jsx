@@ -8,7 +8,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import SideBar from "./components/Sidebar";
+import SideBar from "./components/SideBar";
 import ProductDescription from "./components/ProductDescription";
 
 //import descriptionContext
@@ -17,11 +17,7 @@ function App() {
   const { showItemDescription } = useContext(DescriptionContext);
 
   return (
-    <div
-      className={`flex-col flex-grow relative min-h-[100vh] flex ${
-        showItemDescription ? "max-h-[100vh] overflow-hidden" : ""
-      }`}
-    >
+    <div className="relative flex min-h-[100vh] flex-grow flex-col">
       <Router>
         <Header />
         <Nav />
